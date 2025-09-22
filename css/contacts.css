@@ -1,0 +1,427 @@
+/* General code */
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    background-color: rgb(221, 230, 237);
+}
+
+@font-face {
+  font-family: 'Genova';
+  src: url('Genova.otf');
+}
+
+/* header */
+
+.header{
+  height: 100px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-direction: row;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+
+  background-color: black;
+
+  transition: background-color 2000ms;
+}
+
+.header.sticking{
+  background-color: black;
+  font-family: 'Genova';
+}
+
+.icon{
+  margin-top: 3px;
+  margin-left: 80px;
+  height: 95px;
+}
+
+.right{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  place-items: center;
+
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.areas-text{
+  font-size: 25px;
+  text-decoration: none;
+  color: rgb(157, 178, 191);
+
+  font-family: 'Genova';
+}
+
+.areas-text:hover{
+  opacity: 70%;
+}
+
+#login-size{
+  font-size:36px
+}
+
+/* main */
+
+
+.main-ctt{
+  margin-top: 70px;
+
+  display: grid;
+  place-items: center;
+  grid-template-columns: auto auto;
+
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.align-title{
+  display: grid;
+  grid-template-columns: auto auto;
+  place-items: center;
+}
+
+.content-contacts{
+  padding-bottom: 100px;
+  display: grid;
+  place-items: center;
+  grid-template-rows: auto auto;
+}
+
+#top-margin{
+  margin-top: 20px;
+}
+
+.name-number{
+  margin-left: 10px;
+
+  font-family: 'Genova';
+  font-weight: bold;
+  font-size: 11px;
+
+  margin-bottom: 20px;
+  margin-right: 3px;
+
+  display: grid;
+  place-items: center;
+}
+
+.contact-text{
+  font-family: 'Genova';
+  font-weight: bold;
+  font-size: 40px;
+
+  padding-top: 40px;
+  margin-bottom: 10px;
+}
+
+.align-localization-title{
+  color: black;
+  font-family: 'Genova';
+  font-size: 40px;
+  padding-top: 40px;
+  margin-left: 30px;
+  margin-bottom: 40px;
+}
+
+.divede-content{
+  display: grid;
+  grid-template-columns: auto;
+  flex-direction: column;
+}
+
+.content-text-description{
+  display:grid;
+  place-items: center;
+  text-indent: 30px;
+  font-family: 'Genova';
+  font-size: 10px;
+  text-align:justify;
+}
+
+.content-exemples {
+  font-family: 'Genova';
+  text-indent: 30px;
+  display: grid;
+  place-items: start;
+  margin-top: -90px;
+}
+
+.exemples-titles{
+
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.exemples{
+  font-size: 20px;
+}
+
+/* ESTILIZAÇÃO BOTÕES DE NUMEROS DE EMERGENCIA COPIA-COLA */
+
+.ctt-pessoal-text {
+
+  margin-top: -250px;
+  text-align: justify;
+}
+
+#emer {
+  place-items: center;
+  width: 50%;
+	height: 50%;
+	object-fit: cover;
+
+}
+
+.numbers-contact{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  flex-direction: row;
+}
+
+.name-number{
+  margin-left: 10px;
+  font-family: 'Genova';
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 70px;
+  text-align: justify;
+  display: grid;
+}
+
+
+.numbers-contact{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  flex-direction: row;
+  place-items: center;
+
+  margin-top: 20px;
+}
+
+
+.contatos{  
+  margin-top: -550px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  flex-direction: column;
+}
+
+#modern-copy-btn {
+  background-color: #526D82; 
+  color: white;
+  padding: 10px 20px;
+  border-color: #27374D;
+  border-radius: 10px;
+  font-size: 16px;
+  display: inline-flex;
+  gap: 8px;
+  font-family: 'Genova';
+}
+
+#modern-copy-bnt:hover {
+  background-color: #9DB2BF;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* descripition */
+
+.contact-text{
+  color:rgb(30, 60, 85);
+  font-family: 'Genova';
+  font-weight: bold;
+  font-size: 40px;
+  padding-top: 60px;
+  margin-bottom: 30px;
+  text-indent: 30px;
+}
+
+.content-text-description{
+  font-family: 'Genova';
+  font-size: 25px;
+  text-indent: 30px;
+  text-indent: 30px;
+  text-align: justify;
+}
+
+/* footer */
+
+.footer{
+  height: 150px;
+  margin-top: 100px;
+
+  font-size: 30px;
+
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+ 
+  background-color: black;
+  color: rgb(157, 178, 191);;
+  font-family: 'Genova';
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+
+.icons{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  place-items: center;
+}
+
+.central-link{
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  color: rgb(39, 55, 77);
+}
+
+#images{
+  height: 40px;
+}
+
+#images2{
+  height: 50px;
+}
+
+@media (max-width: 1680px) {
+  
+  .areas-text{
+    font-size: 22px;
+    text-decoration: none;
+    color: rgb(157, 178, 191);
+  
+    font-family: 'Genova';
+  }
+
+  #login-size{
+  font-size: 33px
+}
+
+}
+
+@media (max-width: 1530px) {
+  
+  .areas-text{
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(157, 178, 191);
+  
+    font-family: 'Genova';
+  }
+
+    #login-size{
+    font-size: 31px
+  }  
+
+  .icon{
+    margin-top: 3px;
+    margin-left: 80px;
+    height: 85px;
+  }
+
+  
+
+}
+
+@media (max-width: 1390px) {
+  
+  .areas-text{
+    font-size: 17px;
+    text-decoration: none;
+    color: rgb(157, 178, 191);
+  
+    font-family: 'Genova';
+  }
+
+    #login-size{
+    font-size: 30px
+  }
+
+  .icon{
+    margin-top: 3px;
+    margin-left: 80px;
+    height: 85px;
+  }
+
+}
+
+@media (max-width: 1230px) {
+  
+  .areas-text{
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(157, 178, 191);
+  
+    font-family: 'Genova';
+  }
+
+    #login-size{
+  font-size: 28px
+  }
+
+  .icon{
+    margin-top: 3px;
+    margin-left: 80px;
+    height: 85px;
+  }
+
+}
+
+@media (max-width: 1130px) {
+  
+  .areas-text{
+    font-size: 12px;
+    text-decoration: none;
+    color: rgb(157, 178, 191);
+  
+    font-family: 'Genova';
+  }
+
+    #login-size{
+    font-size: 25px
+  } 
+
+  .icon{
+    margin-top: 3px;
+    margin-left: 80px;
+    height: 75px;
+  }
+
+}
+
+@media (max-width: 890px) {
+  
+  .areas-text{
+    font-size: 10px;
+    text-decoration: none;
+    color: rgb(157, 178, 191);
+  
+    font-family: 'Genova';
+  }
+
+    #login-size{
+    font-size: 20px
+  } 
+
+  .icon{
+    margin-top: 10px;
+    margin-left: 80px;
+    height: 65px;
+  }
+
+}

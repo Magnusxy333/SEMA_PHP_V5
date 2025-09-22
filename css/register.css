@@ -1,0 +1,531 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    background-color: rgb(221, 230, 237);
+}
+
+@font-face {
+  font-family: 'Genova';
+  src: url('../../fonts/Genova.otf');
+}
+
+.header{
+  height: 100px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-direction: row;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+
+  background-color: black;
+
+  transition: background-color 2000ms;
+}
+
+.header.sticking{
+  background-color: black;
+  font-family: 'Genova';
+}
+
+.icon{
+  margin-top: 3px;
+  margin-left: 80px;
+  height: 95px;
+}
+
+.right{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  place-items: center;
+
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.areas-text{
+  font-size: 25px;
+  text-decoration: none;
+  color: rgb(157, 178, 191);
+
+  font-family: 'Genova';
+}
+
+.areas-text:hover{
+  opacity: 70%;
+}
+
+
+.login-back-button{
+  background-color: lightgreen;
+ 
+  padding: 7px;
+ 
+  margin-top: 15px;
+  margin-left: 15px;
+ 
+  border: solid 1px;
+  border-radius: 10px;
+ 
+  cursor: pointer;
+}
+
+#login-size{
+  font-size:36px
+}
+
+/* REGISTER */
+  
+
+.contect-login{
+  display: grid;
+  place-items: center;
+
+  font-family: 'Genova';
+  font-weight: bold;
+
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
+
+.login-countainer{
+  display: grid;
+  place-items: center;
+
+  background-color: rgb(221, 230, 237);
+
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 100px;
+}
+
+.box{
+  background-color: rgb(221, 230, 237);
+
+  border: 2px solid;
+  border-radius: 10px;
+
+  padding: 40px;
+}
+
+.login-title{
+  margin-bottom: 10px;
+  display: grid;
+  place-items: center;
+}
+
+.name-lastname{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-direction: row;
+}
+
+.login-text{
+color: gray;
+font-family: 'Genova';
+
+margin-top: 5px;
+margin-bottom: 5px;
+}
+
+#input-name{
+  font-family: 'Genova';
+  font-weight: bold;
+
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 0px;
+  padding-left: 3px;
+  
+  margin-right: 10px;
+  margin-top: 5px;
+
+  border-radius: 10px;
+}
+
+#input-last-name{
+  font-family: 'Genova';
+  font-weight: bold;
+  
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 0px;
+  padding-left: 3px;
+  
+  margin-right: 5px;
+  margin-top: 5px;
+
+
+  border-radius: 10px;
+}
+
+#input{
+  font-family: 'Genova';
+  font-weight: bold;
+
+  padding-left: 3px;
+  padding-right: 190px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  margin-top: 5px;
+
+  border-radius: 10px;
+}
+
+#input::placeholder{
+  padding-right: 70px;
+}
+
+.input2{
+  padding-left: 3px;
+  padding-right: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  border-radius: 10px;
+}
+
+.login-link{
+  color: green;
+  font-size: 13px;
+  margin-right: 10px;
+
+  font-family: 'Genova';
+}
+
+.button-register-division{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  place-items: center;
+}
+
+
+.login-button-send{
+  background-color: rgb(157, 178, 191);
+
+  font-weight: bold;
+
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+
+  margin-top: 15px;
+  margin-left: 130px;
+
+  border-radius: 10px;
+  border: solid 2px;
+
+  cursor: pointer;
+  font-family: 'Genova';
+}
+
+.login-button-send:hover{
+  background-color: rgb(179, 194, 204);
+}
+
+.login-button-send:active{
+  background-color: rgb(157, 178, 191);
+}
+
+.login-button{
+  background-color: rgb(157, 178, 191);
+  font-family: 'Genova';
+
+  font-weight: bold;
+
+  border-radius: 10px;
+ 
+  padding: 7px;
+ 
+  margin-top: 15px;
+ 
+  border: solid 2px;
+  border-radius: 10px;
+ 
+  cursor: pointer;
+}
+ 
+.login-button:hover{
+  background-color: rgb(179, 194, 204);
+}
+ 
+.login-button:active{
+  background-color: rgb(157, 178, 191);
+}
+
+.box-resgister{
+  background-color: rgb(221, 230, 237);
+
+  margin-top: 15px;
+
+  padding-left: 3px;
+  padding-right: 4px;
+  padding-top: 5px;
+  padding-bottom: 35px;
+
+  border: 2px solid;
+  border-radius: 10px;
+}
+
+.align-register{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'Genova';
+  font-size: 20px;
+
+  margin-top: 30px;
+}
+
+.align-register2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'Genova';
+  font-size: 15px;
+
+  margin-top: 10px;
+}
+
+.link2{
+  color: darkgreen;
+}
+
+.text-log{
+  font-family: 'Genova';
+  font-weight: bold;
+  font-size: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 15px;
+
+  color: blue;
+
+}
+
+/*//////////////////////*/
+
+.footer{
+  height: 150px;
+
+  font-size: 30px;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+
+
+  background-color: black;
+  color: white;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+
+  font-family: 'Genova';
+}
+
+.icons{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  place-items: center;
+}
+
+.coloum-img{
+  display: grid;
+  grid-template-rows: auto auto;
+  place-items: center;
+}
+
+.contac-text-image{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-direction: row;
+  place-items: center;
+}
+
+.numbers-contact{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  flex-direction: row;
+  place-items: center;
+
+}
+
+.name-number{
+  margin-left: 10px;
+
+  font-family: 'Genova';
+  font-weight: bold;
+  font-size: 24px;
+  margin-left: 40px;
+  margin-bottom: 70px;
+  margin-right: 30px;
+
+  display: grid;
+  place-items: center;
+}
+
+#numbers-contact1{
+  color: brown;
+}
+
+#images{
+  height: 40px;
+}
+
+#images2{
+  height: 50px;
+}
+
+.central-link{
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+}
+
+@media (max-width: 1680px) {
+  
+  .areas-text{
+    font-size: 22px;
+    text-decoration: none;
+    color: rgb(157, 178, 191);
+  
+    font-family: 'Genova';
+  }
+
+  #login-size{
+  font-size: 33px
+}
+
+}
+
+@media (max-width: 1530px) {
+  
+  .areas-text{
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(157, 178, 191);
+  
+    font-family: 'Genova';
+  }
+
+    #login-size{
+    font-size: 31px
+  }  
+
+  .icon{
+    margin-top: 3px;
+    margin-left: 80px;
+    height: 85px;
+  }
+
+  
+
+}
+
+@media (max-width: 1390px) {
+  
+  .areas-text{
+    font-size: 17px;
+    text-decoration: none;
+    color: rgb(157, 178, 191);
+  
+    font-family: 'Genova';
+  }
+
+    #login-size{
+    font-size: 30px
+  }
+
+  .icon{
+    margin-top: 3px;
+    margin-left: 80px;
+    height: 85px;
+  }
+
+}
+
+@media (max-width: 1230px) {
+  
+  .areas-text{
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(157, 178, 191);
+  
+    font-family: 'Genova';
+  }
+
+    #login-size{
+  font-size: 28px
+  }
+
+  .icon{
+    margin-top: 3px;
+    margin-left: 80px;
+    height: 85px;
+  }
+
+}
+
+@media (max-width: 1130px) {
+  
+  .areas-text{
+    font-size: 12px;
+    text-decoration: none;
+    color: rgb(157, 178, 191);
+  
+    font-family: 'Genova';
+  }
+
+    #login-size{
+    font-size: 25px
+  } 
+
+  .icon{
+    margin-top: 3px;
+    margin-left: 80px;
+    height: 75px;
+  }
+
+}
+
+@media (max-width: 890px) {
+  
+  .areas-text{
+    font-size: 10px;
+    text-decoration: none;
+    color: rgb(157, 178, 191);
+  
+    font-family: 'Genova';
+  }
+
+    #login-size{
+    font-size: 20px
+  } 
+
+  .icon{
+    margin-top: 10px;
+    margin-left: 80px;
+    height: 65px;
+  }
+
+}

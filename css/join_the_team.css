@@ -1,0 +1,323 @@
+/* General code */
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    background-color: rgb(221, 230, 237);
+}
+
+@font-face {
+  font-family: 'Genova';
+  src: url('../../fonts/Genova.otf');
+}
+
+/* header */
+
+.header{
+  height: 100px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-direction: row;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+
+  background-color: black;
+
+  transition: background-color 2000ms;
+}
+
+.header.sticking{
+  background-color: black;
+  font-family: 'Genova';
+}
+
+.icon{
+  margin-top: 3px;
+  margin-left: 80px;
+  height: 95px;
+}
+
+.right{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  place-items: center;
+
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.areas-text{
+  font-size: 25px;
+  text-decoration: none;
+  color: rgb(157, 178, 191);
+
+  font-family: 'Genova';
+}
+
+.areas-text:hover{
+  opacity: 70%;
+}
+
+#login-size{
+  font-size:36px
+}
+
+/* main */
+
+.main{
+  margin-top: 100px; 
+
+  display: grid;
+  justify-content: center;
+  font-family: 'Genova';
+}
+
+.text-main{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.div-countainer{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 100px;
+  padding-bottom: 275px;
+}
+
+.comment-box{
+  display: grid;
+  justify-content: center;
+}
+
+.input{
+  padding-left: 3px;
+  padding-right: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  border-radius: 10px;
+
+}
+
+.button-public{
+  background-color: rgb(157, 178, 191);
+
+  border-radius: 10px;
+
+  font-family: 'Genova';
+
+  margin-top: 8px;
+  margin-bottom: 30px;
+
+  padding: 3px;
+  cursor: pointer;
+}
+
+.button-public:hover{
+  background-color: rgb(179, 194, 204);
+}
+ 
+.button-public:active{
+  background-color: rgb(157, 178, 191);
+}
+
+.div-aling{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  place-items: center;
+}
+
+.div-text{
+  background-color: rgb(157, 178, 191);
+
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  border-radius: 50px;
+
+  margin-bottom: 15px;
+
+  text-align: center;
+}
+
+
+/* footer */
+
+.footer{
+  height: 150px;
+
+  font-size: 30px;
+
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+ 
+  background-color: black;
+  color: rgb(157, 178, 191);;
+  font-family: 'Genova';
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+
+.icons{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  place-items: center;
+}
+
+.central-link{
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  color: rgb(39, 55, 77);
+}
+
+#images{
+  height: 40px;
+}
+
+#images2{
+  height: 50px;
+}
+
+@media (max-width: 1680px) {
+  
+  .areas-text{
+    font-size: 22px;
+    text-decoration: none;
+    color: rgb(157, 178, 191);
+  
+    font-family: 'Genova';
+  }
+
+  #login-size{
+  font-size: 33px
+}
+
+}
+
+@media (max-width: 1530px) {
+  
+  .areas-text{
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(157, 178, 191);
+  
+    font-family: 'Genova';
+  }
+
+    #login-size{
+    font-size: 31px
+  }  
+
+  .icon{
+    margin-top: 3px;
+    margin-left: 80px;
+    height: 85px;
+  }
+
+  
+
+}
+
+@media (max-width: 1390px) {
+  
+  .areas-text{
+    font-size: 17px;
+    text-decoration: none;
+    color: rgb(157, 178, 191);
+  
+    font-family: 'Genova';
+  }
+
+    #login-size{
+    font-size: 30px
+  }
+
+  .icon{
+    margin-top: 3px;
+    margin-left: 80px;
+    height: 85px;
+  }
+
+}
+
+@media (max-width: 1230px) {
+  
+  .areas-text{
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(157, 178, 191);
+  
+    font-family: 'Genova';
+  }
+
+    #login-size{
+  font-size: 28px
+  }
+
+  .icon{
+    margin-top: 3px;
+    margin-left: 80px;
+    height: 85px;
+  }
+
+}
+
+@media (max-width: 1130px) {
+  
+  .areas-text{
+    font-size: 12px;
+    text-decoration: none;
+    color: rgb(157, 178, 191);
+  
+    font-family: 'Genova';
+  }
+
+    #login-size{
+    font-size: 25px
+  } 
+
+  .icon{
+    margin-top: 3px;
+    margin-left: 80px;
+    height: 75px;
+  }
+
+}
+
+@media (max-width: 890px) {
+  
+  .areas-text{
+    font-size: 10px;
+    text-decoration: none;
+    color: rgb(157, 178, 191);
+  
+    font-family: 'Genova';
+  }
+
+    #login-size{
+    font-size: 20px
+  } 
+
+  .icon{
+    margin-top: 10px;
+    margin-left: 80px;
+    height: 65px;
+  }
+
+}
